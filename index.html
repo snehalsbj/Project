@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <h1>Simple Quiz</h1>
+        <div id="qr-code" style="text-align: center; margin-bottom: 20px;">
+            <button id="qr-btn" class="btn">Scan the QR code for mobile</button>
+            <canvas id="qr-canvas"></canvas>
+        </div>
+        <div id="start-container" style="text-align: center; margin-bottom: 20px;">
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+        <div class="quiz" style="display: none;">
+            <h2 class="question" id="question">Question goes here</h2>
+            <div id="answer-button">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn" style="display: none;"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
